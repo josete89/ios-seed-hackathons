@@ -11,15 +11,12 @@ import UIKit
 public enum ViewModelsFactory {
     
     case home
-    case detail
     
     public func instantiate<T>() -> T {
         switch self {
         case .home:
             let domain:GreetingsInput = DomainFactory.gretings.instantiate()
             return HomeViewModel(domain: domain) as! T
-        case .detail:
-            return DetailViewModel() as! T
         }
     }
     

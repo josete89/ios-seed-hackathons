@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		229AF8D51FD1C927883B9CAB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DFEBE437EEBDBDB2318A4 /* DetailViewModel.swift */; };
-		54E5A52A3A7D670981658020 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140213D1BC8D7AF251C2F54 /* DetailViewController.swift */; };
 		D8DE9EC71FAE37CF00BAC90E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE9EC61FAE37CF00BAC90E /* AppDelegate.swift */; };
 		D8DE9EC91FAE37CF00BAC90E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE9EC81FAE37CF00BAC90E /* HomeViewController.swift */; };
 		D8DE9ECC1FAE37CF00BAC90E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DE9ECA1FAE37CF00BAC90E /* Main.storyboard */; };
@@ -26,8 +24,8 @@
 		D8DE9F131FAE3F9700BAC90E /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DE9F0D1FAE3F9700BAC90E /* AlamofireImage.framework */; };
 		D8DE9F141FAE3F9700BAC90E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DE9F0E1FAE3F9700BAC90E /* RxCocoa.framework */; };
 		D8DE9F151FAE3F9700BAC90E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DE9F0F1FAE3F9700BAC90E /* Alamofire.framework */; };
-		D8DE9F341FAE490A00BAC90E /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0658002F9503DABCBBB9913 /* DetailViewControllerTests.swift */; };
-		D8DE9F351FAE490D00BAC90E /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E69A1E2DD56599F0ADB6BE /* DetailViewModelTests.swift */; };
+		D8DE9F3B1FAE522400BAC90E /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE9F3A1FAE522400BAC90E /* HomeViewControllerTest.swift */; };
+		D8DE9F3E1FAE524200BAC90E /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE9F3D1FAE524200BAC90E /* HomeViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		79E69A1E2DD56599F0ADB6BE /* DetailViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
 		D8DE9EC31FAE37CF00BAC90E /* HackathonSeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonSeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DE9EC61FAE37CF00BAC90E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8DE9EC81FAE37CF00BAC90E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +71,8 @@
 		D8DE9F0E1FAE3F9700BAC90E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		D8DE9F0F1FAE3F9700BAC90E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		D8DE9F101FAE3F9700BAC90E /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		E0658002F9503DABCBBB9913 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
-		EA8DFEBE437EEBDBDB2318A4 /* DetailViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		F140213D1BC8D7AF251C2F54 /* DetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D8DE9F3A1FAE522400BAC90E /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
+		D8DE9F3D1FAE524200BAC90E /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,56 +104,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		45F7DB02DF51E0E44E6570B8 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				79E69A1E2DD56599F0ADB6BE /* DetailViewModelTests.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		5E33B23B1261E98FC39AA2B0 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				EA8DFEBE437EEBDBDB2318A4 /* DetailViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		6D0020006D69EDCD9BF6730D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F140213D1BC8D7AF251C2F54 /* DetailViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8446ADB4A8C1715D42975AA1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E0658002F9503DABCBBB9913 /* DetailViewControllerTests.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A777D71AAD72E9DBB3BA8355 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				6D0020006D69EDCD9BF6730D /* View */,
-				5E33B23B1261E98FC39AA2B0 /* ViewModel */,
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
-		B54D18E510DD4DBB63034955 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				8446ADB4A8C1715D42975AA1 /* View */,
-				45F7DB02DF51E0E44E6570B8 /* ViewModel */,
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
 		D8DE9EBA1FAE37CF00BAC90E = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				D8DE9EF81FAE389A00BAC90E /* Home */,
-				A777D71AAD72E9DBB3BA8355 /* Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -242,7 +187,7 @@
 		D8DE9EF71FAE387B00BAC90E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				B54D18E510DD4DBB63034955 /* Detail */,
+				D8DE9F361FAE51EF00BAC90E /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -309,6 +254,31 @@
 				D8DE9F101FAE3F9700BAC90E /* RxTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8DE9F361FAE51EF00BAC90E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE9F381FAE51FE00BAC90E /* View */,
+				D8DE9F371FAE51F800BAC90E /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D8DE9F371FAE51F800BAC90E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE9F3D1FAE524200BAC90E /* HomeViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D8DE9F381FAE51FE00BAC90E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE9F3A1FAE522400BAC90E /* HomeViewControllerTest.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,8 +448,6 @@
 				D8DE9EFE1FAE392500BAC90E /* Greetings.swift in Sources */,
 				D8DE9EC71FAE37CF00BAC90E /* AppDelegate.swift in Sources */,
 				D8DE9F071FAE39F500BAC90E /* UIViewController+Instantiation.swift in Sources */,
-				54E5A52A3A7D670981658020 /* DetailViewController.swift in Sources */,
-				229AF8D51FD1C927883B9CAB /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,9 +455,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8DE9F3E1FAE524200BAC90E /* HomeViewModelTest.swift in Sources */,
 				D8DE9EDC1FAE37CF00BAC90E /* HackathonSeedTests.swift in Sources */,
-				D8DE9F341FAE490A00BAC90E /* DetailViewControllerTests.swift in Sources */,
-				D8DE9F351FAE490D00BAC90E /* DetailViewModelTests.swift in Sources */,
+				D8DE9F3B1FAE522400BAC90E /* HomeViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

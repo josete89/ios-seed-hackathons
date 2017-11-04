@@ -45,11 +45,11 @@ class MockedOutput:{{ prefix }}{{ module_info.name }}ViewModelOutput{
 
 class MockedVM:{{ prefix }}{{ module_info.name }}ViewModelType{
 
-	let input = MockedInput()
-	let output = MockedOutput()
+	let inputVM = MockedInput()
+	let outputVM = MockedOutput()
 	
-	public var input: {{ prefix }}{{ module_info.name }}ViewModelInput { return self.input }
-    public var output: {{ prefix }}{{ module_info.name }}ViewModelOutput { return self.output}
+	public var input: {{ prefix }}{{ module_info.name }}ViewModelInput { return self.inputVM }
+    public var output: {{ prefix }}{{ module_info.name }}ViewModelOutput { return self.outputVM }
 
 
 }
