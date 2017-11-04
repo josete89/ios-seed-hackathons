@@ -1,0 +1,26 @@
+# Template information section
+name: "mvvm_swift"
+summary: "A swift sample mvvm templates"
+author: "Jose Luis Alcala"
+version: "1.0"
+license: "MIT"
+
+# The declarations for code files
+code_files:
+# View layer
+- {name: View/ViewController.swift, path: Code/View/ViewController.swift.liquid}
+
+# ViewModel layer
+- {name: ViewModel/ViewModel.swift, path: Code/ViewModel/ViewModel.swift.liquid}
+
+# The declarations for test files
+test_files:
+# ViewController tests
+- {name: View/ViewControllerTests.swift, path: Tests/View/viewcontroller_tests.swift.liquid}
+
+# ViewModel tests
+- {name: ViewModel/ViewModelTests.swift, path: Tests/ViewModel/viewmodel_tests.swift.liquid}
+
+# Template dependencies
+dependencies:
+- RxSwift

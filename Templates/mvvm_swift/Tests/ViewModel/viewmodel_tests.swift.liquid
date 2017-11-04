@@ -1,0 +1,36 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import XCTest
+@testable import {{ module_info.project_name }}
+
+final class {{ prefix }}{{ module_info.name }}ViewModelTests: XCTestCase {
+
+	fileprivate var viewModel:{{ prefix }}{{ module_info.name }}ViewModel?  
+    
+    override func setUp() {
+        super.setUp()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.viewModel = {{ prefix }}{{ module_info.name }}ViewModel()
+    }
+    
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        self.viewModel = nil
+        super.tearDown()
+    }
+    
+    func testExample() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssert(self.vm != nil)
+    }
+    
+
+    
+}

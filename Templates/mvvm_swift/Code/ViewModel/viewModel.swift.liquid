@@ -1,0 +1,37 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+import RxSwift
+
+public protocol {{ prefix }}{{ module_info.name }}ViewModelInput {
+    
+}
+
+public protocol {{ prefix }}{{ module_info.name }}ViewModelOutput {
+    
+}
+
+public protocol {{ prefix }}{{ module_info.name }}ViewModelType {
+
+    var input: {{ prefix }}{{ module_info.name }}ViewModelInput { get }
+    var output: {{ prefix }}{{ module_info.name }}ViewModelOutput { get }
+}
+
+final class {{ prefix }}{{ module_info.name }}ViewModel:{{ prefix }}{{ module_info.name }}ViewModelType,{{ prefix }}{{ module_info.name }}ViewModelInput,{{ prefix }}{{ module_info.name }}ViewModelOutput {
+
+	private let dispose = DisposeBag()
+	
+    public var input: {{ prefix }}{{ module_info.name }}ViewModelInput { return self }
+    public var output: {{ prefix }}{{ module_info.name }}ViewModelOutput { return self }
+
+    public init() {
+
+    }
+	
+}
